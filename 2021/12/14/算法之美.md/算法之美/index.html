@@ -22,7 +22,7 @@
 
   
 
-  <title>Hexo</title>
+  <title>昨天又昨天，美还逃不出时间的威严 | Hexo</title>
 
   
 
@@ -96,7 +96,7 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap"></h1>
+          <h1 class="title-wrap">昨天又昨天，美还逃不出时间的威严</h1>
           <h2 class="title-sub-wrap">
             <strong>John Doe</strong>
             <span>发布于</span>
@@ -129,127 +129,7 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <h1 id="带着问题学习，是最有效的学习方式之一"><a href="#带着问题学习，是最有效的学习方式之一" class="headerlink" title="带着问题学习，是最有效的学习方式之一"></a>带着问题学习，是最有效的学习方式之一</h1><p>一万小时大牛理论<br>不要浮躁，不要丧失思考<br>情商比智商更重要。对于很多学科的学习，智商并不是瓶颈，最终能够决定你能达到的高度的，还是情商，而情商中最重要的，我觉得就是逆商（逆境商数，Adversity Quotient），也就是，当你遇到困难时，你会如何去面对，这将会决定你的人生最终能够走多远。</p>
-<h1 id="数组和链表"><a href="#数组和链表" class="headerlink" title="数组和链表"></a>数组和链表</h1><h2 id="链表理解"><a href="#链表理解" class="headerlink" title="链表理解"></a>链表理解</h2><p>将某个变量赋值给指针，实际上就是将这个变量的地址赋值给指针，或者反过来说，指针中存储了这个变量的内存地址，指向了这个变量，通过指针就能找到这个变量。</p>
-<p>警惕指针丢失和内存泄漏</p>
-<h2 id="哨兵"><a href="#哨兵" class="headerlink" title="哨兵"></a>哨兵</h2><p>针对链表的插入、删除操作，需要对插入第一个结点和删除最后一个结点的情况进行特殊处理。这样代码实现起来就会很繁琐，不简洁，而且也容易因为考虑不全而出错，利用哨兵简化操作。</p>
-<h2 id="关于链表面试"><a href="#关于链表面试" class="headerlink" title="关于链表面试"></a>关于链表面试</h2><p>对于笔试，不需要考虑空间复杂度，只考虑时间复杂度<br>对于面试，再考虑时间复杂度的前提下，一定要找到空间最省的方法<br>leetcode 35复杂链表的复制</p>
-<p>19删除倒数第n个节点（用栈或者头节点前创建哑节点快慢指针）</p>
-<p> 21合并两个有序链表（递归或者哨兵节点的迭代）</p>
-<p> 141 环形链表（快慢指针，hashset）</p>
-<p>206 反转链表（迭代）</p>
-<p> 876[链表的中间结点] （快慢指针）</p>
-<p>有环链表的相交问题</p>
-<p>1.用哈希set<br>2.用快慢指针，快指针与慢指针相遇有环，然后将快指针返回初始位置，步数和慢指针一样，相交点就是入环点</p>
-<h1 id="栈和队列"><a href="#栈和队列" class="headerlink" title="栈和队列"></a>栈和队列</h1><h2 id="栈Stack"><a href="#栈Stack" class="headerlink" title="栈Stack"></a>栈Stack</h2><p>特点：对特定场景的抽象，数组和链表暴露太多操作和接口</p>
-<p>空间时间复杂度均为O（1）</p>
-<h2 id="支持动态扩容的栈"><a href="#支持动态扩容的栈" class="headerlink" title="支持动态扩容的栈"></a>支持动态扩容的栈</h2><p>当栈满了之后，我们申请一个支持动态扩容的数组，将更多的数据搬移到数组中</p>
-<p>出栈的时间复杂度不变</p>
-<p>出栈的时间复杂度，需要申请内存和数据的搬移，使用最好情况为O（1），最坏为O（n）</p>
-<p>平均复杂度可以使用摊还分析法，一般是O（1），最坏为O（n）</p>
-<h2 id="栈的应用"><a href="#栈的应用" class="headerlink" title="栈的应用"></a>栈的应用</h2><p>leetcode：最小函数的栈？用两个栈，小堆栈或者集合排序时间复杂度为O（1）</p>
-<p>栈在表达式求值中的应用：其中一个保存操作数的栈，另一个是保存运算符的栈。我们从左向右遍历表达式，当遇到数字，我们就直接压入操作数栈；当遇到运算符，就与运算符栈的栈顶元素进行比较。</p>
-<p>栈在括号匹配中的应用</p>
-<p><em>浏览器的前进后退功能</em></p>
-<h2 id="队列Queue"><a href="#队列Queue" class="headerlink" title="队列Queue"></a>队列Queue</h2><h2 id="队列的应用"><a href="#队列的应用" class="headerlink" title="队列的应用"></a>队列的应用</h2><p>处理没有空闲资源的线程池</p>
-<p>高性能队列 Disruptor、Linux 环形缓存，都用到了循环并发队列；Java concurrent 并发包利用 ArrayBlockingQueue （阻塞队列）来实现公平锁等。</p>
-<h1 id="递归："><a href="#递归：" class="headerlink" title="递归："></a>递归：</h1><p>递归要考虑递归的条件，以及终止的条件<br>递归虽然简洁，但是还会有很多弊端：堆栈溢出，重复代码，函数耗时间长，空间复杂度高，如果数据库有脏数据，会发生死循环等</p>
-<h1 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h1><ul>
-<li>考虑排序算法的<strong>执行效率</strong> 1.最好情况、最坏情况、平均情况时间复杂度<ol start="2">
-<li>时间复杂度的系数、常数 、低阶</li>
-</ol>
-3.比较次数和交换（或移动）次数</li>
-<li>排序算法的<strong>内存消耗</strong></li>
-<li>排序算法的<strong>稳定性</strong> 不改变相等元素之间的先后顺序</li>
-</ul>
-<h2 id="冒泡插入选择"><a href="#冒泡插入选择" class="headerlink" title="冒泡插入选择"></a>冒泡插入选择</h2><p>插入 插入算法的核心思想是取未排序区间中的元素，在已排序区间中找到合适的插入位置将其插入，并保证已排序区间数据一直有序</p>
-<p>冒泡 只操作相邻的数据</p>
-<p>选择 每次会从未排序区间中找到最小的元素，将其放到已排序区间的末尾。<strong>选择排序不是稳定的排序</strong></p>
-<p>平均时间复杂度为O(n2)</p>
-<h2 id="快排（分区点）归并-堆排序"><a href="#快排（分区点）归并-堆排序" class="headerlink" title="快排（分区点）归并 堆排序"></a>快排（分区点）归并 堆排序</h2><p>O（nlongn）</p>
-<h2 id="桶，计数-基数"><a href="#桶，计数-基数" class="headerlink" title="桶，计数 基数"></a>桶，计数 基数</h2><p>O（n）<br>排序算法需要考虑执行效率，内存消耗和排序的稳定性</p>
-<p>二分查找的时间：O（log（n））<br>二分查找的局限性：<br>首先，二分查找依赖的是顺序表结构，简单点说就是数组。<br>其次，二分查找需要有序数组<br>需要先排序<br>数据量太小或者太大都不适合<br>二分查找更适合用在“近似”查找问题，在这类问题上，二分查找的优势更加明显。比如今天讲的这几种变体问题，用其他数据结构，比如散列表、二叉树，就比较难实现了。</p>
-<p>跳表：给链表加上多级索引的数据结构，redis使用调表来实现有序的集合，插入删除查找的时间复杂度都是对数复杂度<br>它确实是一种各方面性能都比较优秀的动态数据结构，可以支持快速地插入、删除、查找操作，写起来也不复杂，甚至可以替代红黑树（Red-black tree）。</p>
-<h1 id="散列表："><a href="#散列表：" class="headerlink" title="散列表："></a>散列表：</h1><p>散列表用的是数组支持按照下标随机访问数据的特性，所以散列表其实就是数组的一种扩展，由数组演化而来。可以说，如果没有数组，就没有散列表。</p>
-<h2 id="散列函数（hash函数）："><a href="#散列函数（hash函数）：" class="headerlink" title="散列函数（hash函数）："></a>散列函数（hash函数）：</h2><ol>
-<li>散列函数得到的散列值是一个非负整数</li>
-<li>如果key1=key2，那么hash（key1）=hash（key2）</li>
-<li>如果key1！=key2，那么hash（key1）！=hash（key2） 理想条件下，可能会发生散列冲突</li>
-<li>从hash值不能推出原始数据</li>
-<li>散列冲突概率很小</li>
-<li>执行尽量高效</li>
-</ol>
-<h2 id="解决散列冲突："><a href="#解决散列冲突：" class="headerlink" title="解决散列冲突："></a>解决散列冲突：</h2><ol>
-<li>开放寻址法如果发生了散列冲突，那么寻找一个新的空闲位置，将其插入，使用线性探针方法寻找位置：如果某个数据经过散列函数散列之后，存储位置已经被占用了，我们就从当前位置开始，依次往后查找，看是否有空闲位置，直到找到为止。支持插入删除查找，在删除下，如果hash值被删除了，标注为delete，当查找时，遇到delete不是结束而是跳过所有开放寻址会有很多问题，比如当数据很多时，会一直发生hash冲突，导致空闲位置会越来越少的，这样探针散列表极端条件下会变成O(n)</li>
-<li>拉链法在每个散列表中，每个槽或者桶都会对应一条链表，所有散列值相同的元素我们都放到链表中当插入的时候，我们只需要通过散列函数计算出对应的散列槽位，将其插入到对应链表中即可，所以插入的时间复杂度是 O(1)。</li>
-</ol>
-<h2 id="散列表课后解答"><a href="#散列表课后解答" class="headerlink" title="散列表课后解答"></a>散列表课后解答</h2><ol>
-<li>假设我们有 10 万条 URL 访问日志，如何按照访问次数给 URL 排序？</li>
-</ol>
-<p>遍历 10 万条数据，以 URL 为 key，访问次数为 value，存入散列表，同时记录下访问次数的最大值 K，时间复杂度 O(N)。</p>
-<p>如果 K 不是很大，可以使用桶排序，时间复杂度 O(N)。如果 K 非常大（比如大于 10 万），就使用快速排序，复杂度 O(NlogN)。</p>
-<ol start="2">
-<li>有两个字符串数组，每个数组大约有 10 万条字符串，如何快速找出两个数组中相同的字符串？</li>
-</ol>
-<p>以第一个字符串数组构建散列表，key 为字符串，value 为出现次数。再遍历第二个字符串数组，以字符串为 key 在散列表中查找，如果 value 大于零，说明存在相同字符串。时间复杂度 O(N)。</p>
-<h1 id="二叉树：非线性的数据结构"><a href="#二叉树：非线性的数据结构" class="headerlink" title="二叉树：非线性的数据结构"></a>二叉树：非线性的数据结构</h1><p>完全二叉树：完全二叉树要求，除了最后一层，其他层的节点个数都是满的，最后一层的节点都靠左排列。<br>如果节点 X 存储在数组中下标为 i 的位置，下标为 2 * i 的位置存储的就是左子节点，下标为 2 * i + 1 的位置存储的就是右子节点。反过来，下标为 i/2 的位置存储就是它的父节点。<br>通过这种方式，我们只要知道根节点存储的位置（一般情况下，为了方便计算子节点，根节点会存储在下标为 1 的位置），这样就可以通过下标计算，把整棵树都串起来。<br>堆其实就是完全二叉树<br>前序遍历是指，对于树中的任意节点来说，先打印这个节点，然后再打印它的左子树，最后打印它的右子树。<br>中序遍历是指，对于树中的任意节点来说，先打印它的左子树，然后再打印它本身，最后打印它的右子树。<br>后序遍历是指，对于树中的任意节点来说，先打印它的左子树，然后再打印它的右子树，最后打印这个节点本身。</p>
-<p>二叉查找树可以通过中序遍历排序节点大小<br>平衡查找二叉树：任意一个节点的左右节点的高度差不能大于1<br>时间复杂度为O（log（n））</p>
-<h2 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a>红黑树</h2><h1 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h1><p>小堆顶维护前k大元素</p>
-<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><p>存储社交软件的好友 关系</p>
-<h2 id="图的存储方式"><a href="#图的存储方式" class="headerlink" title="图的存储方式"></a>图的存储方式</h2><h3 id="邻接矩阵"><a href="#邻接矩阵" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h3><p><img src="0684e9c68bf79af085833657cb6b4f64.png" alt="截图"></p>
-<p>优点：直观，其次，用邻接矩阵存储图的另外一个好处是方便计算。这是因为，用邻接矩阵的方式存储图，可以将很多图的运算转换成矩阵之间的运算。比如求解最短路径问题时会提到一个Floyd-Warshall（弗洛伊德算法） 算法，就是利用矩阵循环相乘若干次得到结果。</p>
-<p>缺点：比较消耗内存，比如a[i][j] j=1那么aji一定也等于1啊</p>
-<h3 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h3><p><img src="d9d6bb105ad758476d2013e867121446.png" alt="截图"></p>
-<p>邻接矩阵存储起来比较浪费空间，但是使用起来比较节省时间。相反，邻接表存储起来比较节省空间，但是使用起来就比较耗时间。</p>
-<h3 id="广度优先BFS"><a href="#广度优先BFS" class="headerlink" title="广度优先BFS"></a>广度优先BFS</h3><p><img src="eddc265dc8b406da696f34d27f73e93b.png" alt="截图"></p>
-<h3 id="深度优先（走迷宫）"><a href="#深度优先（走迷宫）" class="headerlink" title="深度优先（走迷宫）"></a>深度优先（走迷宫）</h3><p><img src="b12f035b1363336e121e4e438a030d82.png" alt="截图"></p>
-<h2 id="字典树trie树-查询前缀匹配"><a href="#字典树trie树-查询前缀匹配" class="headerlink" title="字典树trie树 查询前缀匹配"></a>字典树trie树 查询前缀匹配</h2><br/>
-
-<br/>
-
-<h1 id="贪心"><a href="#贪心" class="headerlink" title="贪心"></a>贪心</h1><h1 id="分治"><a href="#分治" class="headerlink" title="分治"></a>分治</h1><h1 id="动态规划"><a href="#动态规划" class="headerlink" title="动态规划"></a>动态规划</h1><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>我们把问题分解为多个阶段，每个阶段对应一个决策。我们记录每一个阶段可达的状态集合（去掉重复的），然后通过当前阶段的状态集合，来推导下一个阶段的状态集合，动态地往前推进。</p>
-<h2 id="一个模型三个特征"><a href="#一个模型三个特征" class="headerlink" title="一个模型三个特征"></a>一个模型三个特征</h2><p>我们一般是用动态规划来解决最优问题。而解决问题的过程，需要经历多个决策阶段。每个决策阶段都对应着一组<strong>状态</strong>。然后我们寻找一组决策序列，经过这组决策序列，能够产生最终期望求解的最优值。</p>
-<h3 id="三个特征"><a href="#三个特征" class="headerlink" title="三个特征"></a>三个特征</h3><p>最优子结构：通过子问题的最优解，推到出问题的最优解</p>
-<p>无后效型：推导后面阶段的状态，不关心怎么推导出的，前面状态确定之后，不会被后面的决策所改变</p>
-<p>重复子问题：不同的决策序列，到达某个相同的阶段是，会产生重复的状态</p>
-<h2 id="动态规划的解题思路"><a href="#动态规划的解题思路" class="headerlink" title="动态规划的解题思路"></a>动态规划的解题思路</h2><ol>
-<li>状态转移表法</li>
-<li>状态转移方程法 </li>
-</ol>
-<h2 id="动态规划实战"><a href="#动态规划实战" class="headerlink" title="动态规划实战"></a>动态规划实战</h2><p>当你在搜索框中，一不小心输错单词时，搜索引擎会非常智能地检测出你的拼写错误，并且用对应的正确单词来进行搜索。作为一名软件开发工程师，你是否想过，这个功能是怎么实现的呢？</p>
-<p>莱温斯坦距离</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public int lwstDP(char[] a, int n, char[] b, int m) &#123;</span><br><span class="line">  int[][] minDist = new int[n][m];</span><br><span class="line">  for (int j = 0; j &lt; m; ++j) &#123; // 初始化第0行:a[0..0]与b[0..j]的编辑距离</span><br><span class="line">    if (a[0] == b[j]) minDist[0][j] = j;</span><br><span class="line">    else if (j != 0) minDist[0][j] = minDist[0][j-1]+1;</span><br><span class="line">    else minDist[0][j] = 1;</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i = 0; i &lt; n; ++i) &#123; // 初始化第0列:a[0..i]与b[0..0]的编辑距离</span><br><span class="line">    if (a[i] == b[0]) minDist[i][0] = i;</span><br><span class="line">    else if (i != 0) minDist[i][0] = minDist[i-1][0]+1;</span><br><span class="line">    else minDist[i][0] = 1;</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i = 1; i &lt; n; ++i) &#123; // 按行填表</span><br><span class="line">    for (int j = 1; j &lt; m; ++j) &#123;</span><br><span class="line">      if (a[i] == b[j]) minDist[i][j] = min(</span><br><span class="line">          minDist[i-1][j]+1, minDist[i][j-1]+1, minDist[i-1][j-1]);</span><br><span class="line">      else minDist[i][j] = min(</span><br><span class="line">          minDist[i-1][j]+1, minDist[i][j-1]+1, minDist[i-1][j-1]+1);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return minDist[n-1][m-1];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private int min(int x, int y, int z) &#123;</span><br><span class="line">  int minv = Integer.MAX_VALUE;</span><br><span class="line">  if (x &lt; minv) minv = x;</span><br><span class="line">  if (y &lt; minv) minv = y;</span><br><span class="line">  if (z &lt; minv) minv = z;</span><br><span class="line">  return minv;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>最长公共子序列距离</p>
-<p>如果 a[i]与 b[j]互相匹配，我们将最大公共子串长度加一，并且继续考察 a[i+1]和 b[j+1]。如果 a[i]与 b[j]不匹配，最长公共子串长度不变，这个时候，有两个不同的决策路线：</p>
-<p>删除 a[i]，或者在 b[j]前面加上一个字符 a[i]，然后继续考察 a[i+1]和 b[j]；</p>
-<p>删除 b[j]，或者在 a[i]前面加上一个字符 b[j]，然后继续考察 a[i]和 b[j+1]。</p>
-<p>反过来也就是说如果我们要求 a[0…i]和 b[0…j]的最长公共长度 max_lcs(i, j)，我们只有可能通过下面三个状态转移过来：</p>
-<p>(i-1, j-1, max_lcs)，其中 max_lcs 表示 a[0…i-1]和 b[0…j-1]的最长公共子串长度；</p>
-<p>(i-1, j, max_lcs)，其中 max_lcs 表示 a[0…i-1]和 b[0…j]的最长公共子串长度；</p>
-<p>(i, j-1, max_lcs)，其中 max_lcs 表示 a[0…i]和 b[0…j-1]的最长公共子串长度。</p>
-<br/>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public int lcs(char[] a, int n, char[] b, int m) &#123;</span><br><span class="line">  int[][] maxlcs = new int[n][m];</span><br><span class="line">  for (int j = 0; j &lt; m; ++j) &#123;//初始化第0行：a[0..0]与b[0..j]的maxlcs</span><br><span class="line">    if (a[0] == b[j]) maxlcs[0][j] = 1;</span><br><span class="line">    else if (j != 0) maxlcs[0][j] = maxlcs[0][j-1];</span><br><span class="line">    else maxlcs[0][j] = 0;</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i = 0; i &lt; n; ++i) &#123;//初始化第0列：a[0..i]与b[0..0]的maxlcs</span><br><span class="line">    if (a[i] == b[0]) maxlcs[i][0] = 1;</span><br><span class="line">    else if (i != 0) maxlcs[i][0] = maxlcs[i-1][0];</span><br><span class="line">    else maxlcs[i][0] = 0;</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i = 1; i &lt; n; ++i) &#123; // 填表</span><br><span class="line">    for (int j = 1; j &lt; m; ++j) &#123;</span><br><span class="line">      if (a[i] == b[j]) maxlcs[i][j] = max(</span><br><span class="line">          maxlcs[i-1][j], maxlcs[i][j-1], maxlcs[i-1][j-1]+1);</span><br><span class="line">      else maxlcs[i][j] = max(</span><br><span class="line">          maxlcs[i-1][j], maxlcs[i][j-1], maxlcs[i-1][j-1]);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  return maxlcs[n-1][m-1];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private int max(int x, int y, int z) &#123;</span><br><span class="line">  int maxv = Integer.MIN_VALUE;</span><br><span class="line">  if (x &gt; maxv) maxv = x;</span><br><span class="line">  if (y &gt; maxv) maxv = y;</span><br><span class="line">  if (z &gt; maxv) maxv = z;</span><br><span class="line">  return maxv;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>当用户在搜索框内，输入一个拼写错误的单词时，我们就拿这个单词跟词库中的单词一一进行比较，计算编辑距离，将编辑距离最小的单词，作为纠正之后的单词，提示给用户。</p>
-<p>这就是拼写纠错最基本的原理。不过，真正用于商用的搜索引擎，拼写纠错功能显然不会就这么简单。一方面，单纯利用编辑距离来纠错，效果并不一定好；另一方面，词库中的数据量可能很大，搜索引擎每天要支持海量的搜索，所以对纠错的性能要求很高。</p>
-<p>针对纠错效果不好的问题，我们有很多种优化思路，我这里介绍几种。</p>
-<p>我们并不仅仅取出编辑距离最小的那个单词，而是取出编辑距离最小的 TOP 10，然后根据其他参数，决策选择哪个单词作为拼写纠错单词。比如使用搜索热门程度来决定哪个单词作为拼写纠错单词。</p>
-<p>我们还可以用多种编辑距离计算方法，比如今天讲到的两种，然后分别编辑距离最小的 TOP 10，然后求交集，用交集的结果，再继续优化处理。</p>
-<p>我们还可以通过统计用户的搜索日志，得到最常被拼错的单词列表，以及对应的拼写正确的单词。搜索引擎在拼写纠错的时候，首先在这个最常被拼错单词列表中查找。如果一旦找到，直接返回对应的正确的单词。这样纠错的效果非常好。</p>
-<p>我们还有更加高级一点的做法，引入个性化因素。针对每个用户，维护这个用户特有的搜索喜好，也就是常用的搜索关键词。当用户输入错误的单词的时候，我们首先在这个用户常用的搜索关键词中，计算编辑距离，查找编辑距离最小的单词。</p>
-<p>针对纠错性能方面，我们也有相应的优化方式。</p>
-<p>我讲两种分治的优化思路。如果纠错功能的 TPS 不高，我们可以部署多台机器，每台机器运行一个独立的纠错功能。当有一个纠错请求的时候，我们通过负载均衡，分配到其中一台机器，来计算编辑距离，得到纠错单词。</p>
-<p>如果纠错系统的响应时间太长，也就是，每个纠错请求处理时间过长，我们可以将纠错的词库，分割到很多台机器。当有一个纠错请求的时候，我们就将这个拼写错误的单词，同时发送到这多台机器，让多台机器并行处理，分别得到编辑距离最小的单词，然后再比对合并，最终决定出一个最优的纠错单词。</p>
-<h1 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h1><p>拓扑排序有两种实现方法，都不难理解。它们分别是 Kahn 算法和 DFS 深度优先搜索算法</p>
-<h2 id="Kahn-算法"><a href="#Kahn-算法" class="headerlink" title="Kahn 算法"></a>Kahn 算法</h2><p>我们先从图中，找出一个入度为 0 的顶点，将其输出到拓扑排序的结果序列中（对应代码中就是把它打印出来），并且把这个顶点从图中删除（也就是把这个顶点可达的顶点的入度都减 1）。我们循环执行上面的过程，直到所有的顶点都被输出。最后输出的序列，就是满足局部依赖关系的拓扑排序</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> []inDegree=<span class="keyword">new</span> <span class="keyword">int</span>[V];</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=o;i&lt;v;i++)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;adj[i].size();j++)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">int</span> w=adj[i].get(j);</span><br><span class="line">    inDegree[w]++;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">LinkedList&lt;Integer&gt;queue=<span class="keyword">new</span> LinkedList&lt;&gt;();</span><br><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;v;i++)</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span>(inDegree[i]==<span class="number">0</span>) queue.add(i);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">while</span>(!queue.isEmpty())</span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">int</span> i=queue.remove();</span><br><span class="line">  System.out.println(<span class="string">&quot;-&gt;&quot;</span>+i);</span><br><span class="line">  <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;adj[i].size();j++)</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">int</span> k=adj[i].get(j);</span><br><span class="line">    inDegree[k]--;</span><br><span class="line">    <span class="keyword">if</span>(inDegree(k)==<span class="number">0</span>) queue.add(k);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="DFS-深度优先搜索算法"><a href="#DFS-深度优先搜索算法" class="headerlink" title="DFS 深度优先搜索算法"></a>DFS 深度优先搜索算法</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">public void topoSortByDFS() &#123;</span><br><span class="line">  // 先构建逆邻接表，边s-&gt;t表示，s依赖于t，t先于s</span><br><span class="line">  LinkedList&lt;Integer&gt; inverseAdj[] = new LinkedList[v];</span><br><span class="line">  for (int i = 0; i &lt; v; ++i) &#123; // 申请空间</span><br><span class="line">    inverseAdj[i] = new LinkedList&lt;&gt;();</span><br><span class="line">  &#125;</span><br><span class="line">  for (int i = 0; i &lt; v; ++i) &#123; // 通过邻接表生成逆邻接表</span><br><span class="line">    for (int j = 0; j &lt; adj[i].size(); ++j) &#123;</span><br><span class="line">      int w = adj[i].get(j); // i-&gt;w</span><br><span class="line">      inverseAdj[w].add(i); // w-&gt;i</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  boolean[] visited = new boolean[v];</span><br><span class="line">  for (int i = 0; i &lt; v; ++i) &#123; // 深度优先遍历图</span><br><span class="line">    if (visited[i] == false) &#123;</span><br><span class="line">      visited[i] = true;</span><br><span class="line">      dfs(i, inverseAdj, visited);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private void dfs(</span><br><span class="line">    int vertex, LinkedList&lt;Integer&gt; inverseAdj[], boolean[] visited) &#123;</span><br><span class="line">  for (int i = 0; i &lt; inverseAdj[vertex].size(); ++i) &#123;</span><br><span class="line">    int w = inverseAdj[vertex].get(i);</span><br><span class="line">    if (visited[w] == true) continue;</span><br><span class="line">    visited[w] = true;</span><br><span class="line">    dfs(w, inverseAdj, visited);</span><br><span class="line">  &#125; // 先把vertex这个顶点可达的所有顶点都打印出来之后，再打印它自己</span><br><span class="line">  System.out.print(&quot;-&gt;&quot; + vertex);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="最短路径"><a href="#最短路径" class="headerlink" title="最短路径"></a>最短路径</h1><p>解决这个问题，有一个非常经典的算法，最短路径算法，更加准确地说，是单源最短路径算法（一个顶点到一个顶点）。提到最短路径算法，最出名的莫过于 Dijkstra 算法了。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+        <p>嗨，你好啊，我心爱的女孩<br>当你看到这的时候就意味着我爱的人要开始读我的情书了<br>说实话，我很忐忑，这不是我第一次写情书，但是是我第一次给我真正爱上的人写情书<br>有的人喜欢了一辈子确还是朋友，有的人对视一眼就可以相伴终生<br>爱这个字分量很重，使用我觉得在二十几岁的年纪里，喜欢才是最适合两个人的词，直到我遇见了你，我开始使用“爱”这个字<br>我的爱情却是我认识你的第一天开始，我很不愿承认我第一眼就喜欢了这样的俗话，尽管这是事实<br>我喜欢你，我也是<br>瑀瑀独行在荒原上的我终于看到了满地的月光，你是心上人，是我恰巧接住的月光。<br>秋天的落叶在地上翻滚了好几圈，我们刚认识第一天就牵手，两只手在空中晃着晃着就牵在了一起。<br>地上的流浪者和月球的常住居民相爱了，大家都说我们好般配。<br>般配的不只是我们的外表，更是我们有趣的灵魂。<br>我该怎么表达我的爱意，用那些老掉牙的情话，还是热烈的吻。</p>
 
       </section>
 
